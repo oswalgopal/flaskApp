@@ -1,4 +1,5 @@
 ### Flask App
+![Flask Logo](https://flask.palletsprojects.com/en/1.1.x/_static/flask-icon.png)
 
 ## Learning resources
 1. [Offical Doc of Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
