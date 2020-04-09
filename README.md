@@ -9,7 +9,7 @@
 1. Install python from [link](https://www.python.org/)
 2. Install Flask using the following command
     ```
-        pip install flask
+    pip install flask
     ```
 3. move int the folder 
     ``` 
@@ -20,6 +20,10 @@
     flask run
     ```
 5. Open your browser on  [http://127.0.0.1:5000](http://127.0.0.1:5000/) or [localhost:5000](localhost:5000)
+6. To On the debug mode run the command 
+    ```
+    export FLASK_DEBUG=1 or export FLASK_DEBUG=true
+    ```
     
 
     
