@@ -4,7 +4,7 @@
 
 from flask import Flask #importing Flask from flask
 
-app = Flask('__main__') # creating an app with the help of the class named as Flask
+app = Flask(__name__) # creating an app with the help of the class named as Flask
 
 # from the app we are defining the routes by default we are having '/' route
 @app.route('/')

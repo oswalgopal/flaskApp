@@ -3,7 +3,7 @@
 # @description: basic sum using the flask app
 
 from flask import Flask
-app = Flask('__main__')
+app = Flask(__name__)
 
 @app.route('/')
 def baseRoute():
@@ -13,4 +13,4 @@ def baseRoute():
 # syntax is <converter: variable_name>
 @app.route('/numberOne=<int:a>&numberTwo=<int:b>')
 def sum(a,b):
-    return f'Sum of {a} and {b} is {a +b}'
+    return f'Sum of {a} and {b} is {a + b}'
