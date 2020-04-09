@@ -1,3 +1,7 @@
+# @author: Gopal Oswal
+# @date: 8 April 2020
+# @description: basic hello world
+
 from flask import Flask #importing Flask from flask
 
 app = Flask('__main__') # creating an app with the help of the class named as Flask
