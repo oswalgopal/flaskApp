@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey I am connected to database</h1>
+    <table border=1>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Mobile No</th>
+        </th>
+    </thead>
+    <tbody>
+    {% for d in data %}
+        <tr>
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.mobile}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+</body>
+</html>
