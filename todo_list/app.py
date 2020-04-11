@@ -1,8 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-todo = ['task 1', 'task 2', 'task 3', 'task 4']
-@app.route('/')
+todo = []
+@app.route('/', methods=["GET", "POST"])
 def todo_functon():
+    if request.method == "POST":
+        todo_name = request.form.get('todo')
+        todo.append(todo_name)
     return render_template('index.html', todo=todo)

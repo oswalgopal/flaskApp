@@ -5,6 +5,10 @@
 </head>
 <body>
     <h1>MY TODO</h1>
+    <form action='/' method="POST">
+        <input type="text" placeholder='Enter Your Todo' name="todo"/>
+        <button type="submit">Add +</button>
+    </form>
     <ul>
         {% for todos in todo %}
             <li>{{todos}}</li>
