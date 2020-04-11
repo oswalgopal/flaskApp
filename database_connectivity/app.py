@@ -1,5 +1,5 @@
 import os # imported os from python
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 from sqlalchemy import create_engine # imported create_engine from sqlalchemy
 from sqlalchemy.orm import scoped_session, sessionmaker # imported scoped_session , sessionmaker from sqlalchemy.orm 
 
@@ -12,4 +12,18 @@ db = scoped_session(sessionmaker(bind=engine)) # created an scooped session with
 def index():
     test = db.execute("SELECT * FROM test").fetchall()
     return render_template('index.html', data=test)
+
+@app.route('/addUser', methods=["POST", 'GET'])
+def addUser():
+    if request.method == "POST":
+        name = request.form.get('name')
+        mobile = str(request.form.get('mobile'))
+        db.execute("insert into test (name, mobile) values (:name, :mobile)", {"name": name, "mobile": mobile})
+        db.commit()
+        test = db.execute("SELECT * FROM test").fetchall()
+        return render_template('index.html', data=test)
+    else:
+        return render_template('addUser.html')
+    
+
 

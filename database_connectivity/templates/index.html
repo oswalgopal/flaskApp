@@ -4,24 +4,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hey I am connected to database</h1>
+    <h1>Hello Users</h1>
+    <a style="border: 1px solid black; padding: 5px;background: blue; color: #fff" href="{{ url_for('addUser') }}">+ Add New</a>
+    <br/>
+    <br/>
     <table border=1>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Mobile No</th>
-        </th>
-    </thead>
-    <tbody>
-    {% for d in data %}
-        <tr>
-            <td>{{d.id}}</td>
-            <td>{{d.name}}</td>
-            <td>{{d.mobile}}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Mobile No</th>
+            </th>
+        </thead>
+        <tbody>
+        {% for d in data %}
+            <tr>
+                <td>{{d.id}}</td>
+                <td>{{d.name}}</td>
+                <td>{{d.mobile}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
     </table>
 </body>
 </html>
