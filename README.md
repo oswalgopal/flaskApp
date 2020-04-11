@@ -24,6 +24,17 @@
     ```
     export FLASK_DEBUG=1 or export FLASK_DEBUG=true
     ```
-    
+## How to refer my folder structure
 
-    
+|Sr No|Folder Name| Description |
+|---|---|---|
+|1|HelloWorld||
+|2|Sum||
+|3|render_html||
+|4|html_inheritance||
+|5|forms||
+|6|todo_list||
+|7|sessions||
+|8|database_connectivity||
+|9|password_hashing||
+|10|LoginPanel||
