@@ -5,7 +5,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker # imported scoped_sessio
 
 app = Flask(__name__)
 
-engine = create_engine('postgresql://postgres:1234@localhost:3000/postgres')  # created an engine with the url to the database
+engine = create_engine('postgresql://postgres:1234@localhost:3000/postgres') # created an engine with the url to the database
 db = scoped_session(sessionmaker(bind=engine)) # created an scooped session with sessionmaker and our engine
 
 @app.route('/')
