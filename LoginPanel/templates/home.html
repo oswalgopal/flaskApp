@@ -4,11 +4,42 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Login Page</title>
+        <title>Home Page</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/login.css') }}">
+        <link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/home.css') }}">
     </head>
     <body>
-        <h1>Hey I am home page</h1>
+    <nav>
+        <ul>
+            <li> <a href="#"> About Us </a></li>
+            <li> <a href="#"> Contact </a></li>
+            <li>
+                <form action="/logout" method="post">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+        <h1>Hello User</h1>
+        <table border=1>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Mobile No</th>
+            </th>
+        </thead>
+        <tbody>
+        {% for data in userdata %}
+            <tr>
+                <td>{{data.id}}</td>
+                <td>{{data.username}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.mobile}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
     </body>
 </html>
