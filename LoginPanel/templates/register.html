@@ -1,19 +1,19 @@
 {% extends 'layout.html' %}
 
 {% block form %}
-    <form class="loginCardWrapper" method="POST">
+    <form class="loginCardWrapper" method="POST" action='register'>
         <h1>Register Page</h1>
         <div class="inputWrapper"> 
             <i class="far fa-user"></i>
-            <input type="text" name="User name" placeholder="Name">
+            <input type="text" name="name" placeholder="Name">
         </div>
         <div class="inputWrapper"> 
             <i class="far fa-user"></i>
-            <input type="text" name="User name" placeholder="username">
+            <input type="text" name="username" placeholder="username">
         </div>
         <div class="inputWrapper"> 
             <i class="far fa-user"></i>
-            <input type="text" name="User name" placeholder="mobile">
+            <input type="text" name="mobile" placeholder="mobile">
         </div>
         <div class="inputWrapper">
             <i class="fas fa-user"></i>
@@ -21,7 +21,7 @@
         </div>
         <div class="inputWrapper">
             <i class="fas fa-user"></i>
-            <input type="password" name="password" placeholder="confirm password">
+            <input type="password" name="confirmpassword" placeholder="confirm password">
         </div>
         <button type="submut">Register</button>
         <br>
