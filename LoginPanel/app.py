@@ -9,6 +9,7 @@ engine = create_engine('postgresql://oswalgopal:oswalgopal25052000@oswalgopal-da
 db = scoped_session(sessionmaker(bind=engine))
 
 @app.route('/')
+@app.route('/login')
 def login():
     return render_template('login.html')
 
