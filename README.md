@@ -28,13 +28,13 @@
 
 |Sr No|Folder Name| Description |
 |---|---|---|
-|1|[HelloWorld](https://github.com/oswalgopal/flaskApp/tree/master/HelloWorld)||
-|2|Sum||
-|3|render_html||
-|4|html_inheritance||
-|5|forms||
-|6|todo_list||
-|7|sessions||
-|8|database_connectivity||
-|9|password_hashing||
-|10|LoginPanel||
+|1|[helloWorld](https://github.com/oswalgopal/flaskApp/tree/master/helloWorld)||
+|2|[sum](https://github.com/oswalgopal/flaskApp/tree/master/sum)||
+|3|[render_html](https://github.com/oswalgopal/flaskApp/tree/master/render_html)||
+|4|[html_inheritance](https://github.com/oswalgopal/flaskApp/tree/master/html_inheritance)||
+|5|[forms](https://github.com/oswalgopal/flaskApp/tree/master/forms)||
+|6|[todo_list](https://github.com/oswalgopal/flaskApp/tree/master/todo_list)||
+|7|[sessions](https://github.com/oswalgopal/flaskApp/tree/master/sessions)||
+|8|[database_connectivity](https://github.com/oswalgopal/flaskApp/tree/master/database_connectivity)||
+|9|[password_hashing](https://github.com/oswalgopal/flaskApp/tree/master/password_hashing)||
+|10|[LoginPanel](https://github.com/oswalgopal/flaskApp/tree/master/LoginPanel)||

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/login.css') }}">
+    </head>
+    <body>
+        <div class='topbox'></div>
+        <div class='bottombox'></div>
+        <form class="loginCardWrapper" method="POST">
+            <h1>Login Page</h1>
+            <div class="inputWrapper"> 
+                <i class="far fa-user"></i><input type="text" name="User name" placeholder="username">
+            </div>
+            <div class="inputWrapper">
+            <i class="fas fa-user"></i><input type="password" name="password" placeholder="password">
+            </div>
+            <button type="submut">Login</button>
+            <br>
+            <a href=""> New User Register</a>
+        </form>
+    </body>
+</html>
