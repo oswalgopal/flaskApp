@@ -3,8 +3,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 app = Flask(__name__)
-# hostname: oswalgopal-database.cmhbhrlpytbe.ap-south-1.rds.amazonaws.com
-# password: oswalgopal25052000
 engine = create_engine('postgresql://oswalgopal:oswalgopal25052000@oswalgopal-database.cmhbhrlpytbe.ap-south-1.rds.amazonaws.com:5432/loginPanel')
 db = scoped_session(sessionmaker(bind=engine))
 
@@ -34,7 +32,7 @@ def login():
             session['loginStatus'] = True
             return redirect(url_for('home'))
         else: 
-            return 'Invalid credentails'
+            return render_template('error.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
