@@ -38,3 +38,4 @@
 |8|[database_connectivity](https://github.com/oswalgopal/flaskApp/tree/master/database_connectivity)||
 |9|[password_hashing](https://github.com/oswalgopal/flaskApp/tree/master/password_hashing)||
 |10|[LoginPanel](https://github.com/oswalgopal/flaskApp/tree/master/LoginPanel)||
+|10|[ORM](https://github.com/oswalgopal/flaskApp/tree/master/ORM)||
