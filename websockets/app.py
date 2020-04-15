@@ -12,10 +12,3 @@ def message(data):
     message = data['message']
     messages.append(message)
     emit('messageAll', message, broadcast=True)
-
-# @socketIo.on('messageAll')
-# def messageAll(message):
-#     return jsonify({
-#         'status': 200,
-#         'message': message
-#     })

@@ -39,3 +39,5 @@
 |9|[password_hashing](https://github.com/oswalgopal/flaskApp/tree/master/password_hashing)||
 |10|[LoginPanel](https://github.com/oswalgopal/flaskApp/tree/master/LoginPanel)||
 |10|[ORM](https://github.com/oswalgopal/flaskApp/tree/master/ORM)||
+|11|[API](https://github.com/oswalgopal/flaskApp/tree/master/API)||
+|12|[websockets](https://github.com/oswalgopal/flaskApp/tree/master/websockets)||
