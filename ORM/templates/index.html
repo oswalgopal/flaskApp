@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Users</h1>
+    <br/>
+    <br/>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Mobile No</th>
+            </th>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.mobile}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
